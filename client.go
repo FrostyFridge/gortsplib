@@ -56,9 +56,10 @@ func canonicalAddr(u *base.URL) string {
 
 	port := u.Port()
 	if port == "" {
-		if u.Scheme == "rtsp" {
+		switch u.Scheme {
+		case "rtsp", "rtspt":
 			port = "554"
-		} else { // rtsps
+		default: // rtsps
 			port = "322"
 		}
 	}
@@ -477,6 +478,12 @@ func (c *Client) Start(scheme string, host string) error {
 	c.connURL = &base.URL{
 		Scheme: scheme,
 		Host:   host,
+	}
+
+	// If using rtspt scheme, force TCP transport only
+	if scheme == "rtspt" {
+		tcpTransport := TransportTCP
+		c.Transport = &tcpTransport
 	}
 	c.ctx = ctx
 	c.ctxCancel = ctxCancel
@@ -968,11 +975,11 @@ func (c *Client) connOpen() error {
 		return nil
 	}
 
-	if c.connURL.Scheme != "rtsp" && c.connURL.Scheme != "rtsps" {
+	if c.connURL.Scheme != "rtsp" && c.connURL.Scheme != "rtsps" && c.connURL.Scheme != "rtspt" {
 		return liberrors.ErrClientUnsupportedScheme{Scheme: c.connURL.Scheme}
 	}
 
-	if c.connURL.Scheme == "rtsps" && c.Transport != nil && *c.Transport != TransportTCP {
+	if (c.connURL.Scheme == "rtsps" || c.connURL.Scheme == "rtspt") && c.Transport != nil && *c.Transport != TransportTCP {
 		return liberrors.ErrClientRTSPSTCP{}
 	}
 

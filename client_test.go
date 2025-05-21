@@ -43,6 +43,16 @@ func TestClientURLToAddress(t *testing.T) {
 			"rtsps://2.2.2.2/path",
 			"2.2.2.2:322",
 		},
+		{
+			"rtspt with port",
+			"rtspt://example.com:8554/path",
+			"example.com:8554",
+		},
+		{
+			"rtspt without port",
+			"rtspt://example.com/path",
+			"example.com:554",
+		},
 	} {
 		t.Run(ca.name, func(t *testing.T) {
 			addr := canonicalAddr(mustParseURL(ca.url))

@@ -31,6 +31,16 @@ func TestParseURL(t *testing.T) {
 				User:   url.UserPassword("user", "pa#ss"),
 			},
 		},
+		{
+			"rtspt scheme",
+			`rtspt://user:pass@example.com:8554/stream`,
+			&URL{
+				Scheme: "rtspt",
+				Host:   "example.com:8554",
+				Path:   "/stream",
+				User:   url.UserPassword("user", "pass"),
+			},
+		},
 	} {
 		t.Run(ca.name, func(t *testing.T) {
 			u, err := ParseURL(ca.enc)

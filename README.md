@@ -17,6 +17,7 @@ Features:
   * Read media streams from a server ("play")
     * Read streams with the UDP, UDP-multicast or TCP transport protocol
     * Read TLS-encrypted streams (TCP only)
+    * Use rtspt:// scheme to force TCP transport
     * Switch transport protocol automatically
     * Read selected media streams
     * Pause or seek without disconnecting from the server
@@ -60,6 +61,7 @@ Features:
 * [client-play-timestamp](examples/client-play-timestamp/main.go)
 * [client-play-options](examples/client-play-options/main.go)
 * [client-play-pause](examples/client-play-pause/main.go)
+* [client-play-forced-tcp](examples/client-play-forced-tcp/main.go)
 * [client-play-to-record](examples/client-play-to-record/main.go)
 * [client-play-backchannel](examples/client-play-backchannel/main.go)
 * [client-play-format-av1](examples/client-play-format-av1/main.go)
