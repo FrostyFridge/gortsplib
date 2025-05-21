@@ -1,8 +1,8 @@
 package gortsplib
 
 import (
-	"github.com/bluenviron/gortsplib/v4/pkg/description"
-	"github.com/bluenviron/gortsplib/v4/pkg/format"
+	"github.com/frostyfridge/gortsplib/v4/pkg/description"
+	"github.com/frostyfridge/gortsplib/v4/pkg/format"
 )
 
 // ServerStreamStatsFormat are stream format statistics.

@@ -3,8 +3,8 @@ package format
 import (
 	"testing"
 
-	"github.com/bluenviron/gortsplib/v4/pkg/sdp"
 	"github.com/bluenviron/mediacommon/v2/pkg/codecs/mpeg4audio"
+	"github.com/frostyfridge/gortsplib/v4/pkg/sdp"
 	"github.com/stretchr/testify/require"
 )
 

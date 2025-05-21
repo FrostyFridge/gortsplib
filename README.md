@@ -1,10 +1,10 @@
 # gortsplib
 
-[![Test](https://github.com/bluenviron/gortsplib/actions/workflows/test.yml/badge.svg)](https://github.com/bluenviron/gortsplib/actions/workflows/test.yml)
-[![Lint](https://github.com/bluenviron/gortsplib/actions/workflows/lint.yml/badge.svg)](https://github.com/bluenviron/gortsplib/actions/workflows/lint.yml)
-[![Go Report Card](https://goreportcard.com/badge/github.com/bluenviron/gortsplib)](https://goreportcard.com/report/github.com/bluenviron/gortsplib)
-[![CodeCov](https://codecov.io/gh/bluenviron/gortsplib/branch/main/graph/badge.svg)](https://app.codecov.io/gh/bluenviron/gortsplib/tree/main)
-[![PkgGoDev](https://pkg.go.dev/badge/github.com/bluenviron/gortsplib/v4)](https://pkg.go.dev/github.com/bluenviron/gortsplib/v4#pkg-index)
+[![Test](https://github.com/frostyfridge/gortsplib/actions/workflows/test.yml/badge.svg)](https://github.com/frostyfridge/gortsplib/actions/workflows/test.yml)
+[![Lint](https://github.com/frostyfridge/gortsplib/actions/workflows/lint.yml/badge.svg)](https://github.com/frostyfridge/gortsplib/actions/workflows/lint.yml)
+[![Go Report Card](https://goreportcard.com/badge/github.com/frostyfridge/gortsplib)](https://goreportcard.com/report/github.com/frostyfridge/gortsplib)
+[![CodeCov](https://codecov.io/gh/frostyfridge/gortsplib/branch/main/graph/badge.svg)](https://app.codecov.io/gh/frostyfridge/gortsplib/tree/main)
+[![PkgGoDev](https://pkg.go.dev/badge/github.com/frostyfridge/gortsplib/v4)](https://pkg.go.dev/github.com/frostyfridge/gortsplib/v4#pkg-index)
 
 RTSP 1.0 client and server library for the Go programming language, written for [MediaMTX](https://github.com/bluenviron/mediamtx).
 
@@ -104,7 +104,7 @@ Features:
 
 ## API Documentation
 
-[Click to open the API Documentation](https://pkg.go.dev/github.com/bluenviron/gortsplib/v4#pkg-index)
+[Click to open the API Documentation](https://pkg.go.dev/github.com/frostyfridge/gortsplib/v4#pkg-index)
 
 ## RTP Payload Formats
 
@@ -114,35 +114,35 @@ In RTSP, media streams are transmitted by using RTP packets, which are encoded i
 
 |codec|documentation|encoder and decoder available|
 |------|-------------|-----------------------------|
-|AV1|[link](https://pkg.go.dev/github.com/bluenviron/gortsplib/v4/pkg/format#AV1)|:heavy_check_mark:|
-|VP9|[link](https://pkg.go.dev/github.com/bluenviron/gortsplib/v4/pkg/format#VP9)|:heavy_check_mark:|
-|VP8|[link](https://pkg.go.dev/github.com/bluenviron/gortsplib/v4/pkg/format#VP8)|:heavy_check_mark:|
-|H265|[link](https://pkg.go.dev/github.com/bluenviron/gortsplib/v4/pkg/format#H265)|:heavy_check_mark:|
-|H264|[link](https://pkg.go.dev/github.com/bluenviron/gortsplib/v4/pkg/format#H264)|:heavy_check_mark:|
-|MPEG-4 Video (H263, Xvid)|[link](https://pkg.go.dev/github.com/bluenviron/gortsplib/v4/pkg/format#MPEG4Video)|:heavy_check_mark:|
-|MPEG-1/2 Video|[link](https://pkg.go.dev/github.com/bluenviron/gortsplib/v4/pkg/format#MPEG1Video)|:heavy_check_mark:|
-|M-JPEG|[link](https://pkg.go.dev/github.com/bluenviron/gortsplib/v4/pkg/format#MJPEG)|:heavy_check_mark:|
+|AV1|[link](https://pkg.go.dev/github.com/frostyfridge/gortsplib/v4/pkg/format#AV1)|:heavy_check_mark:|
+|VP9|[link](https://pkg.go.dev/github.com/frostyfridge/gortsplib/v4/pkg/format#VP9)|:heavy_check_mark:|
+|VP8|[link](https://pkg.go.dev/github.com/frostyfridge/gortsplib/v4/pkg/format#VP8)|:heavy_check_mark:|
+|H265|[link](https://pkg.go.dev/github.com/frostyfridge/gortsplib/v4/pkg/format#H265)|:heavy_check_mark:|
+|H264|[link](https://pkg.go.dev/github.com/frostyfridge/gortsplib/v4/pkg/format#H264)|:heavy_check_mark:|
+|MPEG-4 Video (H263, Xvid)|[link](https://pkg.go.dev/github.com/frostyfridge/gortsplib/v4/pkg/format#MPEG4Video)|:heavy_check_mark:|
+|MPEG-1/2 Video|[link](https://pkg.go.dev/github.com/frostyfridge/gortsplib/v4/pkg/format#MPEG1Video)|:heavy_check_mark:|
+|M-JPEG|[link](https://pkg.go.dev/github.com/frostyfridge/gortsplib/v4/pkg/format#MJPEG)|:heavy_check_mark:|
 
 ### Audio
 
 |codec|documentation|encoder and decoder available|
 |------|-------------|-----------------------------|
-|Opus|[link](https://pkg.go.dev/github.com/bluenviron/gortsplib/v4/pkg/format#Opus)|:heavy_check_mark:|
-|Vorbis|[link](https://pkg.go.dev/github.com/bluenviron/gortsplib/v4/pkg/format#Vorbis)||
-|MPEG-4 Audio (AAC)|[link](https://pkg.go.dev/github.com/bluenviron/gortsplib/v4/pkg/format#MPEG4Audio)|:heavy_check_mark:|
-|MPEG-1/2 Audio (MP3)|[link](https://pkg.go.dev/github.com/bluenviron/gortsplib/v4/pkg/format#MPEG1Audio)|:heavy_check_mark:|
-|AC-3|[link](https://pkg.go.dev/github.com/bluenviron/gortsplib/v4/pkg/format#AC3)|:heavy_check_mark:|
-|Speex|[link](https://pkg.go.dev/github.com/bluenviron/gortsplib/v4/pkg/format#Speex)||
-|G726|[link](https://pkg.go.dev/github.com/bluenviron/gortsplib/v4/pkg/format#G726)||
-|G722|[link](https://pkg.go.dev/github.com/bluenviron/gortsplib/v4/pkg/format#G722)|:heavy_check_mark:|
-|G711 (PCMA, PCMU)|[link](https://pkg.go.dev/github.com/bluenviron/gortsplib/v4/pkg/format#G711)|:heavy_check_mark:|
-|LPCM|[link](https://pkg.go.dev/github.com/bluenviron/gortsplib/v4/pkg/format#LPCM)|:heavy_check_mark:|
+|Opus|[link](https://pkg.go.dev/github.com/frostyfridge/gortsplib/v4/pkg/format#Opus)|:heavy_check_mark:|
+|Vorbis|[link](https://pkg.go.dev/github.com/frostyfridge/gortsplib/v4/pkg/format#Vorbis)||
+|MPEG-4 Audio (AAC)|[link](https://pkg.go.dev/github.com/frostyfridge/gortsplib/v4/pkg/format#MPEG4Audio)|:heavy_check_mark:|
+|MPEG-1/2 Audio (MP3)|[link](https://pkg.go.dev/github.com/frostyfridge/gortsplib/v4/pkg/format#MPEG1Audio)|:heavy_check_mark:|
+|AC-3|[link](https://pkg.go.dev/github.com/frostyfridge/gortsplib/v4/pkg/format#AC3)|:heavy_check_mark:|
+|Speex|[link](https://pkg.go.dev/github.com/frostyfridge/gortsplib/v4/pkg/format#Speex)||
+|G726|[link](https://pkg.go.dev/github.com/frostyfridge/gortsplib/v4/pkg/format#G726)||
+|G722|[link](https://pkg.go.dev/github.com/frostyfridge/gortsplib/v4/pkg/format#G722)|:heavy_check_mark:|
+|G711 (PCMA, PCMU)|[link](https://pkg.go.dev/github.com/frostyfridge/gortsplib/v4/pkg/format#G711)|:heavy_check_mark:|
+|LPCM|[link](https://pkg.go.dev/github.com/frostyfridge/gortsplib/v4/pkg/format#LPCM)|:heavy_check_mark:|
 
 ### Other
 
 |codec|documentation|encoder and decoder available|
 |------|-------------|-----------------------------|
-|MPEG-TS|[link](https://pkg.go.dev/github.com/bluenviron/gortsplib/v4/pkg/format#MPEGTS)||
+|MPEG-TS|[link](https://pkg.go.dev/github.com/frostyfridge/gortsplib/v4/pkg/format#MPEGTS)||
 
 ## Specifications
 

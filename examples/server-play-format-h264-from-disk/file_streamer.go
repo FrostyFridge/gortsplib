@@ -10,9 +10,9 @@ import (
 	"time"
 
 	"github.com/asticode/go-astits"
-	"github.com/bluenviron/gortsplib/v4"
-	"github.com/bluenviron/gortsplib/v4/pkg/format"
 	"github.com/bluenviron/mediacommon/v2/pkg/formats/mpegts"
+	"github.com/frostyfridge/gortsplib/v4"
+	"github.com/frostyfridge/gortsplib/v4/pkg/format"
 )
 
 func randUint32() (uint32, error) {

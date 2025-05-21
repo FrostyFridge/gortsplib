@@ -1,7 +1,7 @@
 package auth
 
 import (
-	"github.com/bluenviron/gortsplib/v4/pkg/base"
+	"github.com/frostyfridge/gortsplib/v4/pkg/base"
 )
 
 // ValidateMethod is a validation method.

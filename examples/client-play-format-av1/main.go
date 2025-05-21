@@ -5,11 +5,11 @@ package main
 import (
 	"log"
 
-	"github.com/bluenviron/gortsplib/v4"
-	"github.com/bluenviron/gortsplib/v4/pkg/base"
-	"github.com/bluenviron/gortsplib/v4/pkg/format"
-	"github.com/bluenviron/gortsplib/v4/pkg/format/rtpav1"
 	"github.com/bluenviron/mediacommon/v2/pkg/codecs/av1"
+	"github.com/frostyfridge/gortsplib/v4"
+	"github.com/frostyfridge/gortsplib/v4/pkg/base"
+	"github.com/frostyfridge/gortsplib/v4/pkg/format"
+	"github.com/frostyfridge/gortsplib/v4/pkg/format/rtpav1"
 	"github.com/pion/rtp"
 )
 

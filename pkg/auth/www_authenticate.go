@@ -1,8 +1,8 @@
 package auth
 
 import (
-	"github.com/bluenviron/gortsplib/v4/pkg/base"
-	"github.com/bluenviron/gortsplib/v4/pkg/headers"
+	"github.com/frostyfridge/gortsplib/v4/pkg/base"
+	"github.com/frostyfridge/gortsplib/v4/pkg/headers"
 )
 
 // GenerateWWWAuthenticate generates a WWW-Authenticate header.

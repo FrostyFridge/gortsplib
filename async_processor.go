@@ -1,7 +1,7 @@
 package gortsplib
 
 import (
-	"github.com/bluenviron/gortsplib/v4/pkg/ringbuffer"
+	"github.com/frostyfridge/gortsplib/v4/pkg/ringbuffer"
 )
 
 // this is an asynchronous queue processor
